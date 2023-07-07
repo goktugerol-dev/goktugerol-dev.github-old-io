@@ -67,6 +67,7 @@
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
       if (data.success || data.ok) {
+        thisForm.querySelector('.sent-message').innerHTML = 'Your email is successfully sent to goktug.erol@solidsoftware.engineering. You will soon receive an answer. Meanwhile, check my official website <a href="https://www.solidsoftware.engineering">www.solidsoftware.engineering</a>.';
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
